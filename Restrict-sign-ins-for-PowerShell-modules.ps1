@@ -1,7 +1,7 @@
 ﻿#Micorosft Graph Entra kurulumunu yapın ve bağlanın. Bağlanmak için Global Administrator hesabını kullanın.
 #Install and connect to Micorosft Graph Entra. Use the Global Administrator account to connect.
 Install-Module Microsoft.Graph -Scope CurrentUser
- Install-Module Microsoft.Graph.Entra -AllowPrerelease -Repository PSGallery -Force
+Install-Module Microsoft.Graph.Entra -AllowPrerelease -Repository PSGallery -Force
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Connect-MgGraph -Scopes Directory.ReadWrite.All, Group.ReadWrite.All, Application.ReadWrite.All, AuditLog.Read.All
 
